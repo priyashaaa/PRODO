@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop API</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="drag.js"defer></script>
+    <script src="todo.js"defer></script>
+</head>
+<body>
+  
+    <h1>Pomodoro   Timer</h1>
+    <p id="timer">25:00</p>
+    <button onclick="startPomodoro()">Start Pomodoro</button>
+    <script src="timer.js">
+      
+    </script>
+  <div class="board">
+    <form id="todo-form">
+      <input  type="text" id="task"  placeholder="New TODO" id="todo-input"/>
+      <button type="submit"> Add +</button>
+    </form>
+    <div class="lanes">
+      <div class="swim-lane" id="todo-lane">
+        <h3 class="heading" align="center">TODO</h3>
+
+        <p class="task" draggable="true"> get groceries</p>
+        <p class="task" draggable="true"> feed the dog</p>
+        <p class="task" draggable="true"> workout</p>
+      </div>
+
+      <div class="swim-lane">
+        <h3 class="heading" align="center">DOING</h3>
+        <p class="task" draggable="true"> watch tv</p>
+
+
+      </div>
+      <div class="swim-lane">
+        <h3 class="heading" align="center">DONE</h3>
+        <p class="task" draggable="true"> do thw homework</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+     
+      
+     
+        
